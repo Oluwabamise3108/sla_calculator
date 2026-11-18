@@ -18,7 +18,7 @@ User can use y in place of yes or n in place of no.
 **Alternative considered:** Make user spell out the yes or no on each run
 
 **Reason:** Again user need to move fast through the program to get the status of a ticket.
-The program is all set to make that as fast as possible.
+The program is all set to make that as fast as possible. The cost is that user might enter 'y' or 'n' as a mistake and it will still go through and accepted as a valid answer
 
 
 ## 3. When user enter an empty ticket ID
@@ -26,7 +26,7 @@ The program is all set to make that as fast as possible.
 **Context:** The rule says the user must enter a ticket ID.
 User might mistakenly skip the ticket ID input
 
-**Alternative considered:** Advice user the ticket ID input cannot be empty
+**Alternative considered:** Advise user the ticket ID input cannot be empty
 
 **Reason:** Decided to stick with the same response "Ticket is invalid. Must start with TCK-"
 Chose that because member might initially not understand which is the ticket ID, the response also provided a direction to what is needed.

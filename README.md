@@ -31,7 +31,7 @@ target has been reached but not exceeded.
   spaces are ignored.
 - Priority: `high`, `medium` or `low`, in any case.
 - Hours: zero or greater. Decimals are accepted.
-- Responded: `yes` or `no`, in any case.
+- Responded: `yes` `y` `no` `n` in any case
 
 Each invalid input produces its own message stating what is wrong.
 
@@ -71,7 +71,7 @@ each run.
 8. TCK-00123            high            4           no              BREACHED by 3 hours               Same              Yes
 8. TCK-00123            medium          3.5         no              AT RISk remaining 0.5 hour        Same              Yes
 9. TCK-00123            medium          2           no              ON TRACK  remaining 2 hours       Same              Yes
-10.                     low             18          no              cannot be empty                   Same              Yes
+10.                     low             18          no               ID must start with TCK-          Same              Yes
 11. TCK-00123           medium          3.1         no              ON TRACK remaining 0.9 hours      Same              Yes
 12. TCK-00123           medium          3.2         no              AT RISK remaining 0.8 hours       Same              Yes
 13. TCK-00123           medium          4           no              AT RISK remaining 0 hour          Same              Yes
@@ -83,8 +83,7 @@ each run.
 
 ## Known limitations
 
-- Non-numeric input for hours (for example `four`) stops the program with a
-  `ValueError`. Error handling is planned for a later version.
+- Non-numeric input for hours (for example `one') produce an invalid response to the user.
 - Handles one ticket per run.
 - Targets are fixed in the code and count calendar hours, not business hours.
 - A ticket that received its first response after the deadline is reported as
@@ -96,4 +95,4 @@ See [DECISIONS.md](DECISIONS.md).
 
 ## Author
 
-Ezekiel Oluwabamise Jude; https://github.com/settings/profile
+Ezekiel Oluwabamise Jude; https://github.com/Oluwabamise3108e

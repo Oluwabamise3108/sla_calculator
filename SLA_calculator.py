@@ -36,7 +36,7 @@ elif raw_hours.startswith("-") and raw_hours[1:].replace(".", "", 1).isdigit():
 
 # 8. check if the input is not a valid decimal or whole number
 elif not (raw_hours.isdigit() or (raw_hours.count(".") == 1 and raw_hours.replace(".", "").isdigit())):
-    print(f"Hours entered ('{raw_hours}') is invalid. Please enter a valid number.")
+    print(f"Hours entered ('{raw_hours}') is invalid. Please enter a valid number(digit).")
 
 # 9. Check if the response is acceptable
 elif cleaned_response not in ["yes", "no", "y", "n"]:
